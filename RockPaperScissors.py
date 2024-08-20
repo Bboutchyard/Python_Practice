@@ -15,29 +15,26 @@ while True:
         choice = int(input('Enter a valid choice please'))
 
     if choice == 1:
-        choice_name = 'Rock\n'
+        choice_name = 'Rock'
     elif choice == 2:
-        choice_name = 'Paper\n'
+        choice_name = 'Paper'
     else:
-        choice_name = 'Scissors\n'
+        choice_name = 'Scissors'
 
     print('Your choice is: \n', choice_name)
     print('Computers turn...\n')
 
     comp_choice = random.randint(1, 3)
 
-    while comp_choice == choice:
-        comp_choice = random.randint(1, 3)
-
     if comp_choice == 1:
-        comp_choice_name = 'Rock\n'
+        comp_choice_name = 'Rock'
     elif choice == 2:
-        comp_choice_name = 'Paper\n'
+        comp_choice_name = 'Paper'
     else:
-        comp_choice_name = 'Scissors\n'
+        comp_choice_name = 'Scissors'
 
-    print("Computers choice is: \n", comp_choice_name)
-    print(choice_name, 'VS \n', comp_choice_name)
+    print("Computers choice is: \n", comp_choice_name, "\n")
+    print(choice_name, 'VS \n', comp_choice_name, "\n")
 
     if choice == comp_choice:
         print('Its a draw\n', end="")
@@ -64,8 +61,6 @@ while True:
         print('Scissors wins\n', end="")
         result = 'Scissors'
 
-    if result == 'DRAW':
-            print("Its a tie\n")
     if result == choice_name:
             print("User wins\n")
     else:
